@@ -18,6 +18,34 @@ Delivery Partner Personal :
 
 Food Delivery Functional Requirement :
 
+Functional Requirements
+
+User can search different restaurant based on his/her location
+
+User can select a restaurant
+
+User can see the menu of selected restaurant
+
+Restraunt can change the menu any time
+
+User selects restraunt and add different food items from the menu
+
+User orders the food by selecting different online payment modes
+
+Cash on delivery can be also option (Optional)
+
+User can track the order in real time
+
+User can cancel the order
+
+The restaurant process the orders by preparing the meal and packaging the orders.
+
+The restaurant contacts the delivery service or their personnel delivery staff to deliver.
+
+Daily allows users to schedule their meals in advance or opt for a daily, weekly or monthly subscription. (Not in scope but it will be good to have in future.)
+
+Customers will have different offers in the form of coupon, discounts, etc.
+
 <img width="1662" alt="Food_Delivery_Functions" src="https://github.com/DowlathBashaG/PaymentSystem-System-Design/assets/9671419/119d6c95-c6b6-47ae-943b-cb7b9c3986c9">
 
 Entities :
