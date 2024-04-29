@@ -68,6 +68,91 @@ System should be highly scalable and available.
 
 User should be able to get all features with minimal latency.
 
+Scalability Estimation
+======================
+
+Traffic Estimates
+
+System is expecting 10,000 orders per minute. So, order requests per second will be:
+
+10, 000 orders per minute/60 = ~ 167 Orders /Second
+
+Storage Estimates
+
+Since we are expecting 10,000 orders per minute so, per day will be:
+
+Orders per day = 10, 000 orders/minute * 60 * 24 = 14,400,000 orders/day
+
+Total expected orders in 5 years = 14,400,000 orders/day * 12 Months * 5 Years = 864,000,000
+
+Lets assume the size of object = 500 bytes
+
+Total storage in 5 years = 432 GB
+
+Bandwidth Estimates
+
+For order, since we are expecting 167 Orders /Second so, the total incoming data for the service will be:
+
+167 Orders/Second * 500 bytes = ~ 1 MB/Second
+
+High Level Design (HLD)
+
+Food delivery system can be devided into three major components:
+
+Customer's Application
+
+Driver's Application or Delivery guy's application
+Admin Panel
+Customer's Application
+
+Selection of city and listing of restraunts
+
+Searching menu: Allow users to search for different restaurants, cafes, pubs, and bars by location and cuisines. Users can go through the menus and choose an item from using the search filter; users can easily 
+
+find their favorite eating places.
+
+Order placement/Cancellation: The user can place an order of selected dishes and food with just a few simple taps on the screen. User can cancel order with a given allowed time.
+
+Tracking Drivers: Users can check how much time a driver will take to reach their food parcel.
+
+Payment gateway integration: It will be required for the payment by users. It will have multiple options of payment.
+
+Driver's Application or Delivery guy's application
+
+Driver's profile - Driver can update his profile details like his name, email, address, phone number, photos, or any other details.
+
+Notification for orders: Through push notifications, drivers can get constant updates & alerts for new food orders online. It will help in the accurate delivery service of your restaurant.
+
+Map for the delivery route: Integrate Google Map or Waze and allow drivers to choose the shortest and fastest routes to reach the location.
+
+Admin Panel
+
+Restaurant management: Being on the admin panel, one can directly manage all the restaurants by adding, updating, and removing any eating joint from the list. He can also check active restaurant status and also 
+
+menu pricing.
+
+Analytics & report generation: Using the analysis and report feature, you can get real-time insights of reports and other accounting information, which helps you to identify the growth and opportunities to expand 
+
+reach.
+
+Monitoring every action: Monitor all the drivers, changes in the menu, deliveries, ratings & reviews of drivers, canceled orders, and other important data related to the driver’s performance.
+
+Payment and commission management: Allow owners to set payment and commission rates and manage it directly from the panel with every single partner and make payments.
+
+Other components can also be included (Not in current scope. This can be the part of future scope):
+
+Customer Relationship Management (CRM): This will be required to help and understand about customers. It will include the solution or query related to ordering or any problem related to order and delivery, likes-
+
+deslikes, transancation details, sales details, order patterns, etc.
+
+Estock Management: It can maintain raw material management, stock availability, consumption report (monthly/yearly), and stock expiration date, etc.
+
+High level design for each component or area can be very wide. Each component will have separate high level design. You should discuss about the area before the development and drawing of high-level design. 
+
+Interviewer will ask you to pickup one from three of them. Lets say its customer's application.
+
+High-level design in general is as below:
+
 <img width="1662" alt="Food_Delivery_Functions" src="https://github.com/DowlathBashaG/PaymentSystem-System-Design/assets/9671419/119d6c95-c6b6-47ae-943b-cb7b9c3986c9">
 
 Entities :
