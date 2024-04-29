@@ -49,6 +49,23 @@ Daily allows users to schedule their meals in advance or opt for a daily, weekly
 
 Customers will have different offers in the form of coupon, discounts, etc.
 
+Non-functional Requirements
+===========================
+
+No. of orders = 10,000 orders per minute
+
+No. of cities and towns operational = 500
+
+Total number of restraunts listed on the application = 140,000
+
+Total active delivery partners = 2,00000
+
+Total number of order cancellations = 1,500 daily
+
+System should be highly scalable and available.
+
+User should be able to get all features with minimal latency.
+
 <img width="1662" alt="Food_Delivery_Functions" src="https://github.com/DowlathBashaG/PaymentSystem-System-Design/assets/9671419/119d6c95-c6b6-47ae-943b-cb7b9c3986c9">
 
 Entities :
