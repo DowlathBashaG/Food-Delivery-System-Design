@@ -165,6 +165,15 @@ Entities :
 
 API's :
 
+
+GET /categories
+Get list of categories
+
+{
+  "category_id": 3,
+  "category_name": "Dine-out"
+}
+
 <img width="1662" alt="APIs_1" src="https://github.com/DowlathBashaG/PaymentSystem-System-Design/assets/9671419/1d28c050-761f-4474-8b5c-25ca24a91699">
 
 <img width="1662" alt="APIs-2" src="https://github.com/DowlathBashaG/PaymentSystem-System-Design/assets/9671419/cf26f5d3-5a9f-40f4-91d1-a82d069b9584">
