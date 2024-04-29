@@ -167,12 +167,446 @@ API's :
 
 
 GET /categories
+
 Get list of categories
 
 {
+
   "category_id": 3,
+  
   "category_name": "Dine-out"
+  
 }
+
+GET /cities
+
+Find the applicaton id and other details for a city.
+
+
+{
+
+  "id": 280,
+  
+  "name": "New York City, NY",
+  
+  "country_id": 216,
+  
+  "country_name": "United States",
+  
+  "is_state": 0,
+  
+  "state_id": 103,
+  
+  "state_name": "New York State",
+  
+  "state_code": "NY"
+  
+}
+
+GET /collections
+
+Returns restraunt collections in a city.
+
+{
+
+  "collection_id": 1,
+  
+  "title": "Trending this week",
+  
+  "url": "https://www.myapp.com/new-york-city/top-restaurants",
+  
+  "description": "The most popular restaurants in town this week",
+  
+  "image_url": "https://b.myapp.com/data/collections/e40960514831cb9b74c552d69eceee0f_1418387628_l.jpg",
+  
+  "res_count": 30,
+  
+  "share_url": "http://www.myapp.to/c-280/1"
+  
+}
+
+GET /cuisines
+
+Get a list of all cousines of restraunts listed in a city.
+
+{
+
+  "cuisine_id": 25,
+  
+  "cuisine_name": "string"
+  
+}
+
+/establishments
+
+Get a list of restraunt types in a city.
+
+{
+
+  "establishment_id": 31,
+  
+  "establishment_name": "Bakery"
+  
+}
+
+GET /geocode
+
+Get location details based on coordinates
+
+{
+
+  "locality": {
+  
+    "entity_type": "group",
+    
+    "entity_id": 36932,
+    
+    "title": "Chelsea Market, Chelsea, New York City",
+    
+    "latitude": 40.742051,
+    
+    "longitude": -74.004821,
+    
+    "city_id": 280,
+    
+    "city_name": "New York City",
+    
+    "country_id": 216,
+    
+    "country_name": "United States"
+    
+  },
+  
+  "popularity": {
+  
+    "popularity": 4.92,
+    
+    "nightlife_index": 4.95,
+    
+    "top_cuisines": "cafe"
+    
+  },
+  
+  "link": "https://www.myapp.com/new-york-city/chelsea-restaurants",
+  
+  "nearby_restaurants": {
+  
+    "id": 16774318,
+    
+    "name": "Otto Enoteca & Pizzeria",
+    
+    "url": "https://www.myapp.com/new-york-city/otto-enoteca-pizzeria-greenwich-village",
+    
+    "location": {
+    
+      "address": "15th Avenue, New York, NY 10003",
+      
+      "locality": "Greenwich Village",
+      
+      "city": "New York City",
+      
+      "latitude": 40.73201,
+      
+      "longitude": -73.996155,
+      
+      "zipcode": 10003,
+      
+      "country_id": 216
+      
+    },
+    
+    "average_cost_for_two": 60,
+    
+    "price_range": 2,
+    
+    "currency": "$",
+    
+    "thumb": "https://b.myapp.com/data/pictures/chains/8/16774318/a54deb9e4dbb79dd7c8091b30c642077_featured_thumb.png",
+    
+    "featured_image": "https://d.myapp.com/data/pictures/chains/8/16774318/a54deb9e4dbb79dd7c8091b30c642077_featured_v2.png",
+    
+    "photos_url": "https://www.myapp.com/new-york-city/otto-enoteca-pizzeria-greenwich-village/photos#tabtop",
+    
+    "menu_url": "https://www.myapp.com/new-york-city/otto-enoteca-pizzeria-greenwich-village/menu#tabtop",
+    
+    "events_url": "https://www.myapp.com/new-york-city/otto-enoteca-pizzeria-greenwich-village/menu#tabtop",
+    
+    "user_rating": {
+    
+      "aggregate_rating": 3.7,
+      
+      "rating_text": "Very Good",
+      
+      "rating_color": "5BA829",
+      
+      "votes": 1046
+      
+    },
+    
+    "has_online_delivery": 0,
+    
+    "is_delivering_now": 0,
+    
+    "has_table_booking": 0,
+    
+    "deeplink": "myapp://r/16774318",
+    
+    "cuisines": "cafe",
+    
+    "all_reviews_count": 15,
+    
+    "photos_count": 18,
+    
+    "phone_numbers": "(212) 228-2930",
+    
+    "photos": {
+    
+      "id": "u_MjA5MjY1OTk5OT",
+      
+      "url": "https://b.myapp.com/data/reviews_photos/c15/9eb13ceaf6e90129c276ce6ff980bc15_1435111695_640_640_thumb.JPG",
+      
+      "thumb_url": "https://b.myapp.com/data/reviews_photos/c15/9eb13ceaf6e90129c276ce6ff980bc15_1435111695_200_thumb.JPG",
+      
+      "user": {
+      
+        "name": "John Doe",
+        
+        "myapp_handle": "John",
+        
+        "foodie_level": "Super Foodie",
+        
+        "foodie_level_num": 9,
+        
+        "foodie_color": "f58552",
+        
+        "profile_url": "https://www.myapp.com/john",
+        
+        "profile_deeplink": "myapp.to/u/1170245",
+        
+        "profile_image": "string"
+        
+      }
+      
+    }
+    
+  }
+  
+}
+
+GET /locations
+
+Search for locations
+
+
+GET /location_details
+
+Get location details.
+
+{
+
+  "entity_type": "group",
+  
+  "entity_id": 36932,
+  
+  "title": "Chelsea Market, Chelsea, New York City",
+  
+  "latitude": 40.742051,
+  
+  "longitude": -74.004821,
+  
+  "city_id": 280,
+  
+  "city_name": "New York City",
+  
+  "country_id": 216,
+  
+  "country_name": "United States"
+  
+}
+
+GET /restraunt
+
+Get restraunt details
+
+
+GET /dailymenu
+
+Get daily menu of a restraunt
+
+{
+
+  "daily_menu": {
+  
+    "daily_menu_id": 6507624,
+    
+    "name": "Vinohradský pivovar",
+    
+    "start_date": "2016-03-08 11:00",
+    
+    "end_date": "016-03-08 15:00",
+    
+    "dishes": {
+    
+      "dish_id": 104089345,
+      
+      "name": "Tatarák ze sumce s toustem",
+      
+      "price": "49 Kč"
+    }
+    
+  }
+  
+}
+
+GET /reviews
+
+Get restraunt reviews.
+
+{
+
+  "rating": null,
+  
+  "review_text": "The best latte I've ever had. It tasted a little sweet",
+  
+  "id": 24127336,
+
+    "rating_color": "305D02",
+    
+  "review_time_friendly": "2 months ago",
+  
+  "rating_text": "Insane!",
+  
+  "timestamp": 1435507367,
+  
+  "likes": 0,
+  
+  "user": {
+  
+    "name": "John Doe",
+    
+    "zomato_handle": "John",
+    
+    "foodie_level": "Super Foodie",
+    
+    "foodie_level_num": 9,
+    
+    "foodie_color": "f58552",
+    
+    "profile_url": "https://www.myapp.com/john",
+    
+    "profile_deeplink": "myapp.to/u/1170245",
+    
+    "profile_image": "string"
+    
+  },
+  
+  "comments_count": 0
+}
+
+POST /orders
+
+Create an order.
+
+{
+
+		"id": "5203f2f7c11e54e2eb2c12e5",
+  
+		"table": null,
+  
+		"total": 21.0,
+  
+		"status": "WAITING",
+  
+		"items": [
+  
+			{
+   
+				"product": {
+    
+					"id": "5403d655c19e51e2ea3c02c0",
+     
+					"type": "HAMBURGUER",
+     
+					"price" :10.5,
+     
+					"description" :"X-EGG"
+     
+				},
+    
+				"quantity": 2
+    
+			}
+   
+		],
+  
+		"delivery": {
+  
+			"address": {
+   
+				"state": "SP",
+    
+				"number": "100",
+    
+				"street": "Rua Guararapes",
+    
+				"complement": "APTO 302",
+    
+				"city": "São Paulo",
+    
+				"zip": "04561-000"
+    
+			},
+   
+			"fullname": "Lucas Michelini Reis de Oliveira",
+   
+			"email": "sdfa@gmail.com",
+   
+			"phone": "11986115678"
+   
+		}
+  
+	}
+ 
+GET /orders/{id}
+
+Get the details of an order by Id.
+
+
+{
+
+		"id": "5604d7f8c19e51e2ea3c01d5",
+  
+		"table": 5,
+  
+		"total": 4,
+  
+		"status": "WAITING",
+  
+		"items": [
+  
+			{
+   
+				"product": {
+    
+					"id": "5403d7e6c19e51e2ea3c02c2",
+     
+					"type": "DRINK",
+     
+					"price": 4,
+     
+					"description": "Coca-Cola"
+     
+				},
+    
+				"quantity": 1
+    
+			}
+   
+		],
+  
+		"delivery": null
+  
+	}
 
 <img width="1662" alt="APIs_1" src="https://github.com/DowlathBashaG/PaymentSystem-System-Design/assets/9671419/1d28c050-761f-4474-8b5c-25ca24a91699">
 
