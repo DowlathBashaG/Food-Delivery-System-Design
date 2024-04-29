@@ -17,8 +17,11 @@ Delivery Partner Personal :
 <img width="1253" alt="Delivery_Partner" src="https://github.com/DowlathBashaG/PaymentSystem-System-Design/assets/9671419/5871bd72-bf31-4ba1-a216-5e98f24e4ccb">
 
 Food Delivery Functional Requirement :
+____________________________________
 
 Functional Requirements
+_______________________
+
 
 User can search different restaurant based on his/her location
 
