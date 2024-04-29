@@ -16,7 +16,9 @@ Delivery Partner Personal :
 
 <img width="1253" alt="Delivery_Partner" src="https://github.com/DowlathBashaG/PaymentSystem-System-Design/assets/9671419/5871bd72-bf31-4ba1-a216-5e98f24e4ccb">
 
-Food Delivery Functional Requirement :
+Cloud Architecture :
+
+![food_del_aws](https://github.com/DowlathBashaG/PaymentSystem-System-Design/assets/9671419/bfb51a2f-8e58-4971-b2a3-236cb82ccd90)
 
 
 Functional Requirements
